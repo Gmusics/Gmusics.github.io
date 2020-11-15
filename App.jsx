@@ -1,13 +1,12 @@
-import React,{Component} from 'react';
+import React, {Component } from 'react';
 import ReactDOM from 'react-dom';
-import Banner from './banner.jsx'; 
+import Components from './component.jsx';
+
 const App = () => {
   return (
-<div>
-  <Banner />
-  <Banner />
-</div>
-
+    <div>
+    <Components />
+   </div>
   )
 };
 

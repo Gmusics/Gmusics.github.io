@@ -1,31 +1,70 @@
 @import url(tracks.css);
-*{
+
+* {
   padding: 0px;
-  margin:0px;
-  font-size:20px;
+  margin: 0px;
+  font-size: 20px;
 }
-#banner{
-  display: grid;
-  background-color: #C35B5B;
-  justify-content: center;
-  align-content: center;
-  height:3rem;
-}
-#banner #title{
-  text-align:center;
-  text-justify: center;
-}
-#main{
+.contact{
   display: flex;
+  width: 100vw;
+  height: 2rem;
+  background-color: #000000;
 }
-#main-post{
-  width: 70vw;
+body{
+  background-color: #A5D5E25E;
 }
-#search{
-  width: 7rem;
-  border: 2px solid green;
+.main-container{
+  display:grid;
+  justify-content: center;
 }
-#divider{
+.header {
+  width: 100vw;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EC0404;
+}
+.header .nav{
+  font-size: .7rem;
+  margin: .2rem;
+}
+
+.search-container {
+  width: 100vw;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+
+#search {
+  width: 10rem;
+  height: 1.29rem;
+  font-size: .5rem;
+  text-align: center;
+  border: 1px solid #000000;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.search-button {
+  width: 3rem;
+  height: 1rem;
+  text-align: center;
+  font-size: 0.5rem;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  margin: .2rem;
+  background-color: #EC0404;
+}
+
+
+#divider {
   background-color: black;
   width: 1px;
   margin: 5px;

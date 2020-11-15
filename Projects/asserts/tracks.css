@@ -1,0 +1,51 @@
+a{
+    text-decoration: none;
+    color:#28454FCC;
+  }
+  
+#track-cont{
+  width: 17rem;
+  border-radius: 5px;
+  border:1px solid red;
+  height: 4rem;
+  background-color: #10C75F;
+  display: flex;
+  margin: 0.2rem;
+}
+ 
+ audio{
+   margin: 0.5rem;
+ }
+ 
+.download{
+  border: 1px solid blue;
+  height: 1rem;
+  width: 7rem;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #1BB4E8CC;
+  text-align: center;
+  margin: 0.3rem;
+}
+.song-desc {
+  display: grid;
+  text-align: center;
+  color: #AC0C64F5;
+  }
+.song-desc h3, a{
+     font-size: .8rem;
+   }
+ #cover-photo{
+  width: 3.5rem;
+  border: 3px solid #0A56493B;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+} 
+  
+.stream-and-download {
+    display: grid;
+    justify-items: center;
+  }
+  

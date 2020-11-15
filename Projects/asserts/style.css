@@ -1,0 +1,32 @@
+@import url(tracks.css);
+*{
+  padding: 0px;
+  margin:0px;
+  font-size:20px;
+}
+#banner{
+  display: grid;
+  background-color: #C35B5B;
+  justify-content: center;
+  align-content: center;
+  height:3rem;
+}
+#banner #title{
+  text-align:center;
+  text-justify: center;
+}
+#main{
+  display: flex;
+}
+#main-post{
+  width: 70vw;
+}
+#search{
+  width: 7rem;
+  border: 2px solid green;
+}
+#divider{
+  background-color: black;
+  width: 1px;
+  margin: 5px;
+}

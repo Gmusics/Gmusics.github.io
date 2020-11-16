@@ -22,27 +22,32 @@ const Track = (props) => {
     <div id="track-cont">
       <img src={img} alt="atiste" id="cover-photo"/>
       <div className="song-desc"> 
-        <a href="#" target="_blank">{tittle}</a>
+        <a className="link" href="#" target="_blank">{tittle}</a>
         <h3>{artist}</h3>
       </div>
     </div>
   )
 };
 export const Contact = () => {
-  return <div className="contact"></div>
+  return <div className="contact">
+ <a> <i className="fab fa-whatsapp"></i></a>
+ <a> <i className="fab fa-instagram"></i></a>
+ <a> <i className="fab fa-facebook"></i></a>
+  </div>
 }
 
 export const Header = () => {
   return (
     <header className="header">
       <hr/>
-      <a href="#" className="nav">Home</a>
+      <a href="#" className="nav link">Home</a>
       <hr/>
-      <a href="#" className="nav">Album</a>
+      <a href="#" className="nav link">Album</a>
       <hr/>
-      <a href="#" className="nav">EP</a>
+      <a href="#" className="nav link">EP</a>
       <hr/>
-      <a href="#" className="nav">Top Hits</a>
+      <hr></hr>
+      <a href="#" className="nav link">Top Hits</a>
     </header>
   )
 };
@@ -50,8 +55,8 @@ export const Header = () => {
 export const Search = () => {
   return (
     <div className="search-container">
-      <input type="search" name="search" id="search" value="" placeholder="search this site" />
-      <button className="search-button">search</button>
+      <input onChange = {() =>{defaultStatus}} type="search" name="search" id="search" value="" placeholder="search this site" />
+      <button className="search-button ">search</button>
     </div>
   )
 }

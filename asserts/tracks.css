@@ -1,22 +1,22 @@
-a{
-    text-decoration: none;
-    color:#28454FCC;
-    box-sizing: border-box;
-  }
-#track-cont{
+@import url(color.css);
+
+#track-cont {
   width: 95vw;
-  border-radius: 5px;
-  border:1px solid red;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+  background-color:white;
+  border: 5px ridge var(--primary-background);
   height: 4rem;
   display: flex;
   margin: 0.2rem;
 }
- 
- audio{
-   margin: 0.5rem;
- }
- 
-.download{
+
+audio {
+  margin: 0.5rem;
+}
+
+.download {
   border: 1px solid blue;
   height: 1rem;
   width: 7rem;
@@ -27,26 +27,29 @@ a{
   text-align: center;
   margin: 0.3rem;
 }
+
 .song-desc {
   display: grid;
   text-align: center;
   color: #AC0C64F5;
   margin: .2rem;
   width: 100%;
-  }
-.song-desc h3, a{
-     font-size: .8rem;
-   }
- #cover-photo{
+}
+
+.song-desc h3,a{
+  font-size: .8rem;
+}
+
+#cover-photo {
   width: 3.5rem;
-  border: 3px solid #0A56493B;
-  -webkit-border-radius: 9px;
-  -moz-border-radius: 9px;
-  border-radius: 9px;
-} 
-  
+  border: 1px solid var(--primary-background);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
 .stream-and-download {
-    display: grid;
-    justify-items: center;
-  }
-  
+  display: grid;
+  justify-items: center;
+}
+/*

@@ -1,0 +1,15 @@
+.fab, .fas, fa {
+  margin:.3rem;
+  height: auto;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.fa-whatsapp{
+  color: #48D403DB;
+}
+.fa-instagram{
+  color: #9F1212;
+}
+.fa-facebook{
+  color: #2B30CDB0;
+}

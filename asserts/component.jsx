@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom'
-import files from './asserts/files.jsx';
+import files from './files.jsx';
 
 export const Banner = () => {
   return (
@@ -52,14 +52,6 @@ export const Header = () => {
   )
 };
 
-export const Search = () => {
-  return (
-    <div className="search-container">
-      <input onChange = {() =>{defaultStatus}} type="search" name="search" id="search" value="" placeholder="search this site" />
-      <button className="search-button ">search</button>
-    </div>
-  )
-}
 export const Ads = () => {
   return (
     <div className="ads">

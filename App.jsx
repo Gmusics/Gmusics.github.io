@@ -1,11 +1,15 @@
-import React, {Component } from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Components from './component.jsx';
+import {Contact, Header, Search, Banner, Ads} from './component.jsx';
 
 const App = () => {
   return (
     <div>
-    <Components />
+      <Contact /> 
+      <Ads />
+      <Header />
+      <Search /> 
+      <Banner />
    </div>
   )
 };

@@ -2,17 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom'
 import files from './asserts/files.jsx';
 
-function Components() {
-  return (
-    <main>
-      <Contact />
-      <Header />
-      <Search />
-      <Banner />
-    </main>
-  )
-}
-const Banner = () => {
+export const Banner = () => {
   return (
     <div className="main-container">
   {files.map(file=> {
@@ -28,7 +18,7 @@ const Banner = () => {
 const Track = (props) => {
   const { img, tittle, artist } = props
   return (
-    
+
     <div id="track-cont">
       <img src={img} alt="atiste" id="cover-photo"/>
       <div className="song-desc"> 
@@ -38,10 +28,11 @@ const Track = (props) => {
     </div>
   )
 };
-const Contact = ()=>{
-  return <div class="contact"></div>
+export const Contact = () => {
+  return <div className="contact"></div>
 }
-const Header = () => {
+
+export const Header = () => {
   return (
     <header className="header">
       <hr/>
@@ -56,13 +47,24 @@ const Header = () => {
   )
 };
 
-const Search = () => {
+export const Search = () => {
   return (
     <div className="search-container">
-      <input type="search" name="" id="search" placeholder="search this site" />
+      <input type="search" name="search" id="search" value="" placeholder="search this site" />
       <button className="search-button">search</button>
     </div>
   )
+}
+export const Ads = () => {
+  return (
+    <div className="ads">
+      <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus iste voluptatibus deleniti eveniet maxime vel veritatis veniam, quia, eum eligendi magni necessitatibus corporis adipisci rerum quas ea deserunt culpa ex.</span>
+      <span>Corrupti adipisci soluta maxime totam explicabo nobis! Necessitatibus quos architecto rem deserunt sapiente iusto, cupiditate quibusdam consequuntur incidunt quam optio porro numquam laboriosam eaque veniam animi amet sunt itaque. Ducimus?</span>
+      <span>Magnam sit fugit reiciendis animi a cumque earum obcaecati, soluta sed veniam voluptatem rem sequi repudiandae facere iusto aut nulla impedit perferendis nam. Illum reprehenderit, iure ratione veniam quas quasi.</span>
+      <span>Eveniet maiores aspernatur iusto, animi iste aperiam earum alias recusandae excepturi quae labore, eos eum fugiat iure ut velit esse adipisci atque omnis consequuntur laboriosam minus ratione quibusdam. Minus, voluptatum.</span>
+      <span>Modi dolorem delectus repellat rem excepturi totam, quam, porro deserunt itaque consequuntur odio officia qui blanditiis. Aut possimus, odit voluptatem ut aperiam blanditiis, pariatur molestiae facilis saepe sunt veritatis delectus.</span></p>
+    </div>
+  )
 };
-export default Components;
+
 //

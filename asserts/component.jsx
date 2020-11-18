@@ -6,7 +6,7 @@ export const Banner = () => {
   return (
     <div className="main-container">
   {files.map(file=> {
-    const {img, artist,tittle,id} = file
+    const {img, artist,title,id} = file
     return <div key={id}>
     <Track {...file}></Track>
     </div>
@@ -16,18 +16,20 @@ export const Banner = () => {
 };
 
 const Track = (props) => {
-  const { img, tittle, artist } = props
+  const { img, title, artist } = props
   return (
 
     <div id="track-cont">
       <img src={img} alt="atiste" id="cover-photo"/>
       <div className="song-desc"> 
-        <a className="link" href="#" target="_blank">{tittle}</a>
+        <a className="link" href="#" target="_blank">{title}</a>
         <h3>{artist}</h3>
       </div>
     </div>
   )
 };
+
+
 export const Contact = () => {
   return <div className="contact">
  <a> <i className="fab fa-whatsapp"></i></a>

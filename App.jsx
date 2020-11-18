@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import SearchBar from './asserts/search.jsx'
-import {Contact, Header, Banner, Ads} from './asserts/component.jsx';
+import { Contact, Header, Banner, Ads } from './asserts/component.jsx';
+import { SearchBar, SearchPage } from './asserts/search.jsx';
 
 const App = () => {
+ 
   return (
     <div>
-      <Contact /> 
-      <Ads />
-      <Header />
-      <SearchBar /> 
-      <Banner />
+    <Header />
+    <SearchBar />
+    <Banner /> 
    </div>
   )
 };

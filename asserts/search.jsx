@@ -2,11 +2,11 @@ import React, { Component, useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import files from './files.jsx';
 
-
-export const SearchBar = (props) => {
-  //const [img,title,artist] = props
-  const [lookFor, setLookFor] = useState('')
-
+var result = []
+export const SearchBar = () => {
+  const [filteredResult, setFilteredResult] = useState([]);
+  const [lookFor, setLookFor] = useState('');
+  result.push(filteredResult)
   const onInputChange = (event) => {
     setLookFor(event.target.value);
   };
@@ -14,26 +14,20 @@ export const SearchBar = (props) => {
   const onFormSubmit = (event) => {
     event.preventDefault();
     filtered();
-    const result = filteredResult.map(item => item);
-    console.log(result);
   };
-  //const regex = RegExp(/\w/)
   const filtered = () => {
     files.filter(item => {
-      if (item.artist.toLowerCase().includes(lookFor.toLowerCase()) || item.title.toLowerCase().includes(lookFor.toLowerCase()) === true) {
-        console.log('result');
-        return filteredResult.push(item);
+      if (item.artist.toLowerCase().includes(lookFor.toLowerCase()) === true || item.title.toLowerCase().includes(lookFor.toLowerCase()) === true) {
+        return setFilteredResult(item);
       }
-      else if (item.artist.toLowerCase().includes(lookFor.toLowerCase()) || item.title.toLowerCase().includes(lookFor.toLowerCase()) === false) {
+      else if (item.artist.toLowerCase().includes(lookFor.toLowerCase()) ===false || item.title.toLowerCase().includes(lookFor.toLowerCase()) === false) {
         console.log('search not found');
         return 'search not found';
       };
     });
-};
-    const filteredResult = [];
-
-    return (
-      <div>
+  }
+  return (
+    <div>
            <form
             onSubmit={onFormSubmit}
             className="search-container">
@@ -51,21 +45,19 @@ export const SearchBar = (props) => {
               </button>
           </form> 
     </div>
-    );
+  );
 };
-
-
-  const searchPage = (props) => {
-    const [img, title, artist] = props
-    return (
-      <div id="track-cont">
+const searchPage = (props) => {
+  const [img, title, artist] = props
+  return (
+    <div id="track-cont">
           <img src={img} alt="atiste" id="cover-photo"/>
           <div className="song-desc"> 
             <a className="link" href="#" target="_blank">{title}</a>
             <h3>{artist}</h3>
           </div>
         </div>
-    )
-  };
+  )
+};
 
 //

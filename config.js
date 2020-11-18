@@ -13,10 +13,12 @@ SystemJS.config({
     'systemjs-babel-build': 'systemjs-plugin-babel@latest/systemjs-babel-browser.js',
     'react': 'react@17/umd/react.development.js',
     'react-dom': 'react-dom@17/umd/react-dom.development.js',
+    'react-router-dom':'react-router-dom@5.2.0/umd/react-router-dom.min.js',
     'prop-types': 'prop-types@15.7.2/prop-types.js',
     'classnames': 'classnames@2.2.6/index.js',
     '@material-ui/core': '@material-ui/core@3.2.2/umd/material-ui.development.js',
     '@material-ui/icons': '@material-ui/icons@3.0.1/index.js',
+    
   },
   transpiler: 'plugin-babel'
 });
